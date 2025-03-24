@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <link rel="stylesheet" href="style.css">
+ <title>HTML Lab 2</title>
+ 
+
+<style>
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;}
+
+  
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2em;}
+
+    h2,h3,h4 {
+ color: #e43ca3;
+    font-size: 1em;}
+
+  p {
+    color: rgb(14, 2, 5);
+    font-size: 1.1em;}
+
+
+  a {
+    color: #da2d2d;}
+
+
+    #Reflection {color: rgb(122, 15, 15);}
+     /* Mobile Design */
+     * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #wrapper {
+      background-color: 
+#e3c0ff;
+    }
+
+    header {
+      color: 
+#ffffff;
+      background-color: 
+#2f0b55;
+      padding: 1em;
+      text-align: center;
+    }
+
+    main {
+      background-color: 
+#FFFFFF;
+      color: 
+#000000;
+      text-align: left;
+      padding: 1em;
+    }
+
+    aside {
+      background-color:
+#f5eaff;
+      text-align: center;
+      border-top: 1px solid 
+white;
+      padding: 1em;
+    }
+
+    footer {
+      color:
+#ffffff;
+      background-color: 
+#2f0b55;
+      font-size: 70%;
+      text-align: center;
+      padding: 0.5em 0;
+    }
+
+    h2 {
+      color: 
+#2f0b55;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    nav li {
+      border-bottom: 1px solid 
+#2f0b55;
+      text-align:center;
+      padding-top: .5em;
+      padding-bottom: .5em;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:link {
+      color: 
+#2f0b55;
+    }
+
+    nav a:hover {
+      color: 
+#474747;
+    }
+    
+    /* Tablet Design Changes */
+    @media (min-width: 600px) { 
+      nav ul {
+        display: flex;
+      flex-flow: row nowrap;
+        justify-content: space-around; }
+      }
+      nav ul li {
+        border-bottom: none;
+      }
+
+      header {
+        grid-area: header;
+      }
+
+      nav {
+        grid-area: nav;
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      aside {
+        grid-area: aside;
+      }
+
+      footer {
+        grid-area: footer;
+      }
+
+      #wrapper {
+        display: grid;
+        grid-template:
+          "header header"
+          "nav    nav"
+          "main   aside"
+          "footer footer"
+          / 55% }
+           /* Desktop Design Changes */
+    @media (min-width: 1024px) {
+     body {
+    background-color:#e3c0ff; 
+       }
+     }
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; }
+
+      #wrapper {
+        width: 80%;
+        margin: auto;
+        max-width: 1200px;
+        display: grid;
+        grid-template:
+          "header header header"
+          "nav    main   aside"
+          "footer footer footer"
+          / 150px;}
+</style>
+</head>
+
+<body>
+  <div id="wrapper">
+  <header> 
+   <nav>
+  <ul>
+    <li><a href="#Lab2">Lab2</a></li>
+    <li><a href="#Lab3">Lab3</a></li>
+    <li><a href="#Lab5">Lab5</a></li>
+  </ul>
+  </nav>
+</header>
+ <h1>Nyliya Roberts</h1>
+ <main>
+  <section id="Lab2">
+   <article>
+  <h2>Lab 2</h2>
+  <p>I had some trouble making sure I had the correct tags and spacing. If something wasn't spaced right, an error would come up when I went to validate the webpage. I got like 16 errors and used that as a guide to what I needed to fix. After fixing those errors, I ran it again just to be safe. I used the HTML basic notes and W3School to help me remember which tags to use.</p>
+  <h3>What I Learned</h3>
+  <ol>
+ <li>I learned how to make a webpage from scratch.</li>
+  <li>I learned what tags are and how to use them.</li>
+ <li>I learned that it takes time and practice to learn HTML.</li>
+ </ol>
+  <h4>Below are the pages I learned how to use tags and HTML:</h4>
+ <ul>
+<li><a href="https://www.w3schools.com/html/html_headings.asp">HTML Headings</a></li>
+<li><a href="https://ccbcmd.brightspace.com/d2l/le/content/152450/viewContent/6887162/View">HTML Basic Notes</a></li>
+ </ul>
+ </article> </section>
+ <section id="Lab3">
+ <article>
+ <h2>Lab 3</h2> 
+ <p>This lab demonstrates CSS</p>
+<h3 class="author"> Published by Nyliya R</h3>
+
+<h4 >What I learned in Lab 03 </h4>
+
+<p id="Reflection">Lab 03, I learned how to add CSS into my HTML by using elements.
+Elements helped me organize the content better for readability.
+I also explored how to make websites more accessible.
+Overall,this lab reinforced the importance of using meaningful HTML tags for a well-structured webpage.
+I am excited to continue learning more about web development.</p>
+<ol>
+<li> Ive learned to apply CSS to HTML. </li>
+<li> how to organize content.</li>
+<li>I have learned that CSS is the presentation layer of HTML.</li> </ol>
+</article>
+</section>
+
+
+
+<section id="Lab5"> <article>
+   <h2>Lab 5</h2> 
+
+   <p> In this lab I learned how to apply flexbox to create a responsive layout. It does 100% take a while to figure out how to add 
+    everything in and make sure it runs right, its a very tedious process Its hard to make sure it was hard making sure 
+    I wasn't adding any extra stuff I had a few extra unclosed tags that that popped up when I went to validate it
+    overall Learning how to add all this together was fun. I used the practice sturcture in the module to help me and w3school 
+    to understand anything I was confused on.</p> 
+  <h3>What I learned</h3>
+  <ol>
+    <li>I learned how to apply flexbox.</li>
+    <li>I learned how to add internal navigation using link anchors.</li>
+    <li>I understood the importance of CSS and HTML working together for better responsiveness.</li>
+  </ol>
+  </article>
+
+</section>
+</main>
+<footer>CSIT 121 Student</footer>
+</div>
+</body>
+</html>
